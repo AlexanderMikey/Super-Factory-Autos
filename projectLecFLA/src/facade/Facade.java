@@ -387,11 +387,11 @@ public class Facade {
 	
 	public static boolean hasNumber(String id) {
 		for (int i = 0; i < id.length(); i++) {
-			if(Character.isDigit(id.charAt(i))) {
-				return true;
+			if(!Character.isDigit(id.charAt(i))) {
+				return false;
 			}
 		}
-		return false;
+		return true;
 	}
 
 }
